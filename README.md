@@ -1,2 +1,8 @@
-# mysinglelist
-package for easy implementation of single list 
+# Single Linked List
+This simple go package will implement help to implement single linked list. 
+
+# Get package 
+
+# Main functions
+
+# Sample Implemenatation code
