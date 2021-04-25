@@ -19,13 +19,13 @@ type Llist struct {
 	tail *node
 }
 
-// Getlist function will return the list
+// Getlist function will return the linked list pointer to work with.
 func Getlist() *Llist {
 	return &Llist{}
 }
 
-// Check list status
-func (l Llist) isEmpty() bool {
+// IsEmpty function will allow to check whether list is empty on not.
+func (l Llist) IsEmpty() bool {
 	if l.head == nil {
 		return true
 	}
@@ -42,7 +42,7 @@ func (l Llist) ListAll() {
 // Add function will add a value to the list
 func (l *Llist) Add(value interface{}) bool {
 	newnode := getNode(value)
-	if l.isEmpty() == true {
+	if l.IsEmpty() == true {
 		l.head = newnode
 		l.tail = newnode
 		return true
